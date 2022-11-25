@@ -1,0 +1,32 @@
+body{
+	background-image: url(../image/Full_screen.jpg);
+}
+p{
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+}
+
+ul{
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+}
+
+table tr figure td a{
+	margin-right: 20px;
+}
+
+h1{
+	vertical-align: middle;
+	text-align: center;
+}
+.btn{
+	border-radius: 9px;
+	font-family:'Oswald',sans-serif;
+	color: #036A81;
+	font-size: 135%;
+	padding: 10px 20px;
+	border: solid #036A81 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+

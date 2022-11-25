@@ -1,0 +1,190 @@
+.container
+{
+	width:100%;
+}
+.wrapper
+{
+	padding:10px 50px 5px 50px;
+	width: 900px;
+	text-align:justify;
+}
+.dark
+{
+	background-color:#31353d;
+	color:white;
+}
+.light
+{
+	background-color:#e9edf2;
+}
+body
+{
+	background-image: url(../image/BG.jpg);
+	font-family: 'Lobster', cursive;
+}
+#clear
+{
+	clear:both;
+}
+#top_left
+{
+	display:inline-block;
+
+}
+#top_right
+{
+	float:right;
+}
+#top_div
+{
+	height:40px;
+	line-height:35px;
+}
+#logo_left
+{
+	display:inline-block;
+}
+#logo_right
+{
+	float:right;
+	margin-top:25px;
+}
+#textstyle
+{
+	height:30px;
+	border-radius:8px;
+	width:200px;
+}
+#button
+{
+	background-color:green;
+	color:white;
+	padding:7px;
+	border-radius:8px;
+	border:1px solid green;
+	width:70px;
+}
+#menu ul
+{
+	list-style:none;
+}
+#menu ul li
+{
+	background-image:url(../image/single.jpg);
+	margin:2px;
+	margin-left:11px;
+	width:210px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	float:left;
+	position:relative;
+	z-index:1000;
+	border-radius:100px;
+}
+#menu ul li a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+#menu ul li a:hover
+{
+	background-color:green;
+	border-radius:8px;
+}
+#menu ul ul
+{
+	position:absolute;
+	display:none;
+}
+#menu ul li:hover > ul
+{
+	display:block;
+}
+#menu ul ul ul
+{
+	margin-left:205px;
+	top:0px;
+}
+#menu ul ul ul li
+{
+	background-color:blue;
+	width:220px;
+}
+#menu
+{
+	background-color:green;
+}
+.container1
+{
+	margin-top:5px;
+}
+#outerbox
+{
+	width:900px;
+	overflow:hidden;
+	margin-left:200px;
+	height:300px;
+
+}
+#sliderbox
+{
+	position:relative;
+	width:2700px;
+	animation-name:slider;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+}
+#sliderbox1
+{
+	position:relative;
+	width:3000px;
+	animation-name:slider;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+}
+#sliderbox img
+{
+	float:left;
+}
+@keyframes slider
+{
+	0%
+	{
+		left:0px;
+	}
+	26.7%
+	{
+		left:0px;
+	}
+	33.4%
+	{
+		left:-900px;
+	}
+	60%
+	{
+		left:-900px;
+	}
+	67%
+	{
+		left:-1800px;
+	}
+	93.4%
+	{
+		left:-1800px;
+	}
+	100%
+	{
+		left:-2700px;
+	}
+}
+.footer
+{
+	text-align:bottom;
+	margin-top:10px;
+	padding-top:10px;
+	background-color:green;
+	background-color:#31353d;
+	color:white;
+}

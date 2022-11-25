@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computer Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="app-container pt-40">
+        <div class="top-cart">
+            <div class="top-cart__info">
+                <div class="top-cart-info__goods"></div>
+                <button class="btn-check">Order
+                <span class="top-cart-info__item">
+                    <span class="red-info">0</span> ₱</span>
+                </button>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <h1 class="header__item">Namias Computer Parts Shop</h1>
+            </div>
+        </header>
+
+        <div class="wrap">
+            <section class="container">
+                <div class="filter-box">
+                    <div class="select-box">
+                        <div class="select-control">
+                            <input type="radio" name="Category" data-value-category="all" id="radio-all"
+                                class="category-control" checked>
+                            <label class="radio-control" for="radio-all">All</label><br>
+                            <input type="radio" name="Category" data-value-category= "mouse" id="radio-mouse"
+                                class="category-control">
+                            <label class="radio-control" for="radio-mouse">Mouses</label><br>
+                            <input type="radio" name="Category" data-value-category="keyboard" id="radio-keyboard"
+                                class="category-control">
+                            <label class="radio-control" for="radio-keyboard">Keyboard</label><br>
+                            <input type="radio" name="Category" data-value-category="monitor" id="radio-bmx"
+                                class="category-control">
+                            <label class="radio-control" for="radio-bmx">Monitor</label><br>
+                        </div>
+
+                    </div>
+                    <div class="price-select-box">
+                        <input type="range" min="0" max="100000" value="50000" class="price-control" data-filter='price'>
+                        <span class="price-value">price to <span class="price-value__item">50000</span> ₱</span>
+                    </div>
+                </div>
+
+                <div class="products-box grid-box">
+
+                    <div data-category='mouse' value="6995" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G502 Lightspeed</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/LOGITECH G502 LIGHTSPEED.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 6,995</p><button class="product-box__btn">+</button>
+
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="3300" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G502 Hero</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/LOGITECH G502 HERO.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,300</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="4340" class="product-box__item">
+                        <h3 class="product-box__title">BENQ ZOWIE EC2</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/BENQ ZOWIE EC2.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,340</p><button class="product-box__btn">+</button>
+
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="2025" class="product-box__item">
+                        <h3 class="product-box__title">BENQ ZOWIE FK2</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/BENQ ZOWIE FK2.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,025</p><button class="product-box__btn">+</button>
+
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="4799" class="product-box__item">
+                        <h3 class="product-box__title">Consair Dark Core RGB Pro SE</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/CORSAIR DARK CORE RGB PRO SE.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,799</p><button class="product-box__btn">+</button>
+
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="4940" class="product-box__item">
+                        <h3 class="product-box__title">Razer Basilisk V2</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/RAZER BASILISK V2.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,940</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="4048" class="product-box__item">
+                        <h3 class="product-box__title">Razer Deathadder V2</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/RAZER DEATHADDER V2.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,048</p><button class="product-box__btn">+</button>
+
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="3799" class="product-box__item">
+                        <h3 class="product-box__title">Steelseries Aerox 3 Wireless</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/STEELSERIES AEROX 3 WIRELESS.JPG">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,799</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="10990" class="product-box__item">
+                        <h3 class="product-box__title">Consair K100 RGB Optical</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Corsair K100 RGB Optical.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 10,990</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="14483" class="product-box__item">
+                        <h3 class="product-box__title">Mountain Everest Max</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Mountain Everest Max.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 14,483</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="7999" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Alloy Elite RGB</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Alloy Elite RGB.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 7,999</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="5760" class="product-box__item">
+                        <h3 class="product-box__title">Razer Cynosa Chroma</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Razer Cynosa Chrom.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 5,760</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="3799" class="product-box__item">
+                        <h3 class="product-box__title">Logitech K840</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech K840.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,799</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="7800" class="product-box__item">
+                        <h3 class="product-box__title">Asus ROG Strix Scope</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Asus ROG Strix Scope.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 7,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="9995" class="product-box__item">
+                        <h3 class="product-box__title">Kinesis Freestyle Edge RGB</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Kinesis Freestyle Edge RGB.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 9,995</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="12461" class="product-box__item">
+                        <h3 class="product-box__title">Razer Huntsman Elite</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Razer Huntsman Elite.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 12,461</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="2095" class="product-box__item">
+                        <h3 class="product-box__title">Steelseries Apex Pro</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/SteelSeries Apex Pro.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,095</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="80685" class="product-box__item">
+                        <h3 class="product-box__title">LG 27GN950-B</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/LG 27GN950-B.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 80,685</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="18799" class="product-box__item">
+                        <h3 class="product-box__title">Gigabyte G27Q</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Gigabyte G27Q.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 18,799</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="20722" class="product-box__item">
+                        <h3 class="product-box__title">Pixio PX277 Prime</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Pixio PX277 Prime.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 20,722</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="19250" class="product-box__item">
+                        <h3 class="product-box__title">Acer Predator X38</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Acer Predator X38.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 19,250</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="32840" class="product-box__item">
+                        <h3 class="product-box__title">ROG STRIX XG17AHPE Portable Monitor</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ROG STRIX XG17AHPE Portable Monitor.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 32,840</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="54781" class="product-box__item">
+                        <h3 class="product-box__title">Alienware 25 AW2521HF</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Alienware 25 AW2521HF.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 54,781</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="48990" class="product-box__item">
+                        <h3 class="product-box__title">ROG Swift PG259QN</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ROG Swift PG259QN.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 48,990</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="3400" class="product-box__item">
+                        <h3 class="product-box__title">STEELSERIES SENSEI TEN Mouse RGB</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/STEELSERIES SENSEI TEN Mouse RGB.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,400</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="3900" class="product-box__item">
+                        <h3 class="product-box__title">RAZER VIPER Mouse (Black)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/RAZER VIPER Mouse (Black).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,900</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="4600" class="product-box__item">
+                        <h3 class="product-box__title">ASUS ROG Gladius II RGB Gaming Mouse (BLACK)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ASUS ROG Gladius II RGB Gaming Mouse (BLACK).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,600</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="3650" class="product-box__item">
+                        <h3 class="product-box__title">HYPER X PULSEFIRE SURGE RGB Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HYPER X PULSEFIRE SURGE RGB Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,650</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="2000" class="product-box__item">
+                        <h3 class="product-box__title">SteelSeries Rival 110 Universal Grip Competitive Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/SteelSeries Rival 110 Universal Grip Competitive Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,000</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="2300" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Pulsefire Core RGB Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Pulsefire Core RGB Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,300</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="2500" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Pulsefire FPS Pro RGB Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Pulsefire FPS Pro RGB Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,500</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="3300" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G502 HERO High Performance RGB Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G502 HERO High Performance RGB Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,300</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="6500" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G903 Lightspeed Wireless Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G903 Lightspeed Wireless Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 6,500</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="1995" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G304 Lightspeed Wireless Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G304 Lightspeed Wireless Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 1,995</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='mouse' value="880" class="product-box__item">
+                        <h3 class="product-box__title">Rapoo V280 VPRO Optical Gaming Mouse</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Rapoo V280 VPRO Optical Gaming Mouse.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="8800" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Alloy Elite 2 Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Alloy Elite 2 Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 8,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="8450" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Alloy Elite Mech RGB Red Switch Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Alloy Elite Mech RGB Red Switch Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 8,450</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="5700" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Alloy Origins Core Tenkeyless Mechanical Switch (Red)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Alloy Origins Core Tenkeyless Mechanical Switch (Red).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 5,700</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="3100" class="product-box__item">
+                        <h3 class="product-box__title">HyperX Alloy Core RGB Membrane Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/HyperX Alloy Core RGB Membrane Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,100</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="2650" class="product-box__item">
+                        <h3 class="product-box__title">XPG INFAREX K20 LED MECH Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/XPG INFAREX K20 LED MECH Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,650</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="9200" class="product-box__item">
+                        <h3 class="product-box__title">ASUS ROG CLAYMORE RGB Mechanical Cherry MX Gaming Keyboard (BLUE)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ASUS ROG CLAYMORE RGB Mechanical Cherry MX Gaming Keyboard (BLUE).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 9,200</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="7800" class="product-box__item">
+                        <h3 class="product-box__title">ASUS ROG STRIX Scope MX Mechanical RGB Gaming Keyboard (BLUE)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ASUS ROG STRIX Scope MX Mechanical RGB Gaming Keyboard (BLUE).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 7,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="7800" class="product-box__item">
+                        <h3 class="product-box__title">ASUS ROG Strix Scope MX Mechanical RGB Gaming Keyboard (RED)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ASUS ROG Strix Scope MX Mechanical RGB Gaming Keyboard (RED).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 7,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="2995" class="product-box__item">
+                        <h3 class="product-box__title">SteelSeries APEX 150 RGB Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/SteelSeries APEX 150 RGB Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,995</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="5500" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G512 Carbon RGB Mechanical Keyboard (GX Blue)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G512 Carbon RGB Mechanical Keyboard (GX Blue).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 5,500</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="2550" class="product-box__item">
+                        <h3 class="product-box__title">RAPOO VRPO V500 RGB Backlit Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/RAPOO VRPO V500 RGB Backlit Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,550</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="1650" class="product-box__item">
+                        <h3 class="product-box__title">Rapoo VPRO V500S Alloy Version Backlit Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Rapoo VPRO V500S Alloy Version Backlit Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 1,650</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="3995" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G413 Carbon Backlit Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G413 Carbon Backlit Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 3,995</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard mouse' value="1200" class="product-box__item">
+                        <h3 class="product-box__title">Logitech MK240 Wireless Nano Keyboard + Mouse Combo</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech MK240 Wireless Nano Keyboard + Mouse Combo.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 1,200</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="6600" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G610 Orion Blue Switch Backlit Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G610 Orion Blue Switch Backlit Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 6,600</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="4800" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G613 Wireless Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G613 Wireless Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="2800" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G213 Prodigy RGB Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G213 Prodigy RGB Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 2,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard mouse' value="5700" class="product-box__item">
+                        <h3 class="product-box__title">Razer Turret Living Room Gaming Mouse and Lapboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Razer Turret Living Room Gaming Mouse and Lapboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 5,700</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="4800" class="product-box__item">
+                        <h3 class="product-box__title">Logitech G613 Wireless Mechanical Gaming Keyboard</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Logitech G613 Wireless Mechanical Gaming Keyboard.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 4,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="1950" class="product-box__item">
+                        <h3 class="product-box__title">RAZER DEATHSTALKER ESSENTIALS GAMING KEYBOARD</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/RAZER DEATHSTALKER ESSENTIALS GAMING KEYBOARD.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 1,950</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="5150" class="product-box__item">
+                        <h3 class="product-box__title">LOGITECH G310 ATLAS DAWN MECHANICAL GAMING KEYBOARD</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/LOGITECH G310 ATLAS DAWN MECHANICAL GAMING KEYBOARD.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 5,150</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='keyboard' value="7200" class="product-box__item">
+                        <h3 class="product-box__title">RAZER BLACKWIDOW CHROMA EDITION KEYBOARD V2 YELLOW SWITCH</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/RAZER BLACKWIDOW CHROMA EDITION KEYBOARD V2 YELLOW SWITCH.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 7,200</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="25150" class="product-box__item">
+                        <h3 class="product-box__title">Asus VG27AQL1A TUF 27-inches Gaming Monitor (BLACK)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Asus VG27AQL1A TUF 27-inches Gaming Monitor (BLACK).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 25,150</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="16000" class="product-box__item">
+                        <h3 class="product-box__title">Asus VG279Q1A TUF 27-inches Gaming Monitor (BLACK)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Asus VG279Q1A TUF 27-inches Gaming Monitor (BLACK).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 16,000</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="21400" class="product-box__item">
+                        <h3 class="product-box__title">Asus VG259QM TUF 280HZ 24.5-inches Gaming Monitor</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Asus VG259QM TUF 280HZ 24.5-inches Gaming Monitor.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 21,400</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="10200" class="product-box__item">
+                        <h3 class="product-box__title">ASUS VP249QGR 23.8-Inches Gaming Monitor (BLACK)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/ASUS VP249QGR 23.8-Inches Gaming Monitor (BLACK).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 10,200</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="7600" class="product-box__item">
+                        <h3 class="product-box__title">MSI Optix G241VC 23.6-inch Full HD 1ms Curved Gaming Monitor with AMD FreeSync</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/MSI Optix G241VC 23.6-inch Full HD 1ms Curved Gaming Monitor with AMD FreeSync.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 7,600</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="20800" class="product-box__item">
+                        <h3 class="product-box__title">Samung LS27R750QEEXXP 27-inches Gaming Monitor (Black)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Samung LS27R750QEEXXP 27-inches Gaming Monitor (Black).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 20,800</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="15350" class="product-box__item">
+                        <h3 class="product-box__title">Samsung LC27RG50FQEXXP Full HD Curved 27-inches Gaming Monitor (Black)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Samsung LC27RG50FQEXXP Full HD Curved 27-inches Gaming Monitor (Black).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 15,350</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="20850" class="product-box__item">
+                        <h3 class="product-box__title">Samsung LC27JG54QQEXXP Curved 27-inches Monitor (Black)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Samsung LC27JG54QQEXXP Curved 27-inches Monitor (Black).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 20,850</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="10500" class="product-box__item">
+                        <h3 class="product-box__title">Samsung LC24RG50FQEXXP Curved 23.5-inches Gaming Monitor</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/Samsung LC24RG50FQEXXP Curved 23.5-inches Gaming Monitor.jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 10,500</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="14500" class="product-box__item">
+                        <h3 class="product-box__title">AOC G2790PX 27-inches Gaming Monitor (Black and Red)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/AOC G2790PX 27-inches Gaming Monitor (Black and Red).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 14,500</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div data-category='monitor' value="14500" class="product-box__item">
+                        <h3 class="product-box__title">AOC C27G1 27-inches Gaming Monitor (Black)</h3>
+                        <div class="product-box__img">
+                            <img class="img-fluid" src="i/AOC C27G1 27-inches Gaming Monitor (Black).jpg">
+                        </div>
+                        <div class="product-box__meta">
+                            <p>₱ 14,500</p><button class="product-box__btn">+</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <footer class="bottom-footer bg-beetroot py-1">
+            <div class="container">
+            </div>
+        </footer>
+    </div>
+    <script src="js/filter.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
